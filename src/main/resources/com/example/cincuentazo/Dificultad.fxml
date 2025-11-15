@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="255.0" prefWidth="291.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cincuentazo.controller.DificultController">
+
+    <children>
+
+        <Label text="Choose Dificulty">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+
+        <Label prefHeight="49.0" prefWidth="211.0" text="Select the number of machine users you want to play with" textAlignment="CENTER" wrapText="true" />
+
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="291.0">
+            <children>
+
+                <!-- 1 máquina = Fácil -->
+                <Button mnemonicParsing="false" onAction="#onFacil" prefHeight="36.0" prefWidth="36.0" text="1" textFill="RED">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Button>
+
+                <!-- 2 máquinas = Medio -->
+                <Button mnemonicParsing="false" onAction="#onMedio" prefHeight="36.0" prefWidth="36.0" text="2" textFill="RED">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Button>
+
+                <!-- 3 máquinas = Difícil -->
+                <Button mnemonicParsing="false" onAction="#onDificil" prefHeight="36.0" prefWidth="36.0" text="3" textFill="RED" />
+
+            </children>
+        </HBox>
+
+    </children>
+</VBox>

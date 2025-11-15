@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="400.0" prefWidth="600.0"
+          style="-fx-background-radius: 200; -fx-border-radius: 200;
+                 -fx-border-color: black; -fx-border-width: 8;
+                 -fx-background-color: green;"
+          xmlns="http://javafx.com/javafx/17"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.cincuentazo.controller.HomeController">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="70.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="108.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="65.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="159.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="128.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+
+    <children>
+
+        <HBox alignment="CENTER"
+              prefHeight="100.0" prefWidth="271.0"
+              style="-fx-background-radius: 200; -fx-background-color: #2f1810;"
+              GridPane.columnIndex="2"
+              GridPane.columnSpan="3"
+              GridPane.rowIndex="2">
+
+            <children>
+                <Button fx:id="onPlay" mnemonicParsing="false"
+                        onAction="#onPlatButton" prefHeight="43.0" prefWidth="65.0" />
+
+                <Button fx:id="onHow" mnemonicParsing="false"
+                        onAction="#onHowButtton" prefHeight="43.0" prefWidth="65.0">
+                    <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="onExit" mnemonicParsing="false"
+                        onAction="#onExitButton" prefHeight="43.0" prefWidth="65.0" />
+            </children>
+        </HBox>
+
+        <ImageView fx:id="cincuentazoImage"
+                   fitHeight="150.0" fitWidth="287.0"
+                   pickOnBounds="true" preserveRatio="true"
+                   GridPane.columnIndex="2"
+                   GridPane.columnSpan="3"
+                   GridPane.rowIndex="1" />
+    </children>
+
+</GridPane>
